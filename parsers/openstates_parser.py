@@ -10,8 +10,8 @@ from pathlib import Path
 from gql import gql, Client
 from gql.transport.aiohttp import AIOHTTPTransport
 
-from civic_lib import log_utils, error_utils
-from civic_lib.path_utils import ensure_dir
+from civic_lib_core import log_utils, error_utils
+from civic_lib_core.path_utils import ensure_dir
 
 logger = log_utils.logger
 

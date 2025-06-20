@@ -2,7 +2,7 @@
 
 > Standards Monitoring Agent for Civic Interconnect
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/civic-interconnect/agents-monitor-schema/releases)
+[![Version](https://img.shields.io/badge/version-v1.0.1-blue)](https://github.com/civic-interconnect/agents-monitor-schema/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/civic-interconnect/agents-monitor-schema/actions/workflows/agent-runner.yml/badge.svg)](https://github.com/civic-interconnect/agents-monitor-schema/actions)
 
@@ -29,7 +29,7 @@ Currently, we have a general API key from <https://open.pluralpolicy.com/>.
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\activate
-py -m pip uninstall civic-lib -y
+py -m pip uninstall civic-lib-core -y
 py -m pip install --upgrade pip setuptools wheel --prefer-binary
 py -m pip install --upgrade -r requirements-dev.txt --timeout 100 --no-cache-dir
 pre-commit install
@@ -59,8 +59,8 @@ Then run the following:
 pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 ruff check . --fix
 git add .
-git commit -m "Release v1.0.0: works with civic-lib v0.9.0"
+git commit -m "Release v1.0.1: works with civic-lib-core v0.9.0"
 git push origin main
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.1
+git push origin v1.0.1
 ```

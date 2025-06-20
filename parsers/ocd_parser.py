@@ -8,8 +8,8 @@ It clones the OCD repository if not present, pulls updates, and reports completi
 from pathlib import Path
 import git
 
-from civic_lib import log_utils
-from civic_lib.path_utils import ensure_dir
+from civic_lib_core import log_utils
+from civic_lib_core.path_utils import ensure_dir
 
 logger = log_utils.logger
 
