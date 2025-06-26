@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 from civic_lib_core import error_utils, log_utils
-from civic_lib_core.path_utils import ensure_dir
+from civic_lib_core.fs_utils import ensure_dir
 from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
 

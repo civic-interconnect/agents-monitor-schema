@@ -1,4 +1,4 @@
-# Module `path_utils`
+# Module `fs_utils`
 
 ## Functions
 

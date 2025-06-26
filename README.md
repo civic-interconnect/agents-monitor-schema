@@ -2,7 +2,7 @@
 
 > Standards Monitoring Agent for Civic Interconnect
 
-[![Version](https://img.shields.io/badge/version-v1.0.2-blue)](https://github.com/civic-interconnect/agents-monitor-schema/releases)
+[![Version](https://img.shields.io/badge/version-v1.0.3-blue)](https://github.com/civic-interconnect/agents-monitor-schema/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/civic-interconnect/agents-monitor-schema/actions/workflows/agent-runner.yml/badge.svg)](https://github.com/civic-interconnect/agents-monitor-schema/actions)
 
@@ -59,8 +59,8 @@ Then run the following:
 pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 ruff check . --fix
 git add .
-git commit -m "Release v1.0.2: works with civic-lib-core v0.9.0"
+git commit -m "Release v1.0.3: works with civic-lib-core v0.9.0"
 git push origin main
-git tag v1.0.2
-git push origin v1.0.2
+git tag v1.0.3
+git push origin v1.0.3
 ```
