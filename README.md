@@ -31,9 +31,9 @@ py -m venv .venv
 .\.venv\Scripts\activate
 py -m pip uninstall civic-lib-core -y
 py -m pip install --upgrade pip setuptools wheel --prefer-binary
-py -m pip install --upgrade -r requirements-dev.txt --timeout 100 --no-cache-dir
+py -m pip install --upgrade -e .[dev]
 pre-commit install
-py main.py
+schema-agent start
 ```
 
 ## Deployment

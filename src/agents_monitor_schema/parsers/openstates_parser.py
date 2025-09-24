@@ -8,7 +8,7 @@ import asyncio
 import json
 from pathlib import Path
 
-from civic_lib_core import error_utils, log_utils
+from civic_lib_core import graphql_utils, log_utils
 from civic_lib_core.fs_utils import ensure_dir
 from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
@@ -56,7 +56,9 @@ def run(storage_path: str | Path, config: dict, api_key: str) -> dict | str:
             logger.info("Successfully received schema from OpenStates.")
             return result
         except Exception as e:
-            return error_utils.handle_transport_errors(e, resource_name="OpenStates Introspection")
+            return graphql_utils.handle_transport_errors(
+                e, resource_name="OpenStates Introspection"
+            )
 
     schema = asyncio.run(fetch_schema())
 

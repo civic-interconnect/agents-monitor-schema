@@ -26,8 +26,6 @@ mkdocs serve
 
 ## Releasing New Version
 
-## Releasing New Version
-
 Before publishing a new version, delete .venv. and recreate and activate.
 Run pre-release preparation, installing and upgrading without the -e editable flag.
 Verify all tests pass. Run prep-code (twice if needed).
@@ -39,8 +37,8 @@ py -m venv .venv
 .\.venv\Scripts\activate
 py -m pip install --upgrade pip setuptools wheel --prefer-binary
 py -m pip install --upgrade .[dev]
-pytest tests
+pytest -q
 civic-dev prep-code
-civic-dev bump-version 1.0.2 1.0.3
+civic-dev bump-version 1.0.3 1.0.4
 civic-dev release
 ```
